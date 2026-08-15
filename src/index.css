@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+/* ─── Custom base styles ─────────────────────────────────────────────────── */
+
+/* Smooth scroll everywhere */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better number input appearance (hide browser arrows) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Print styles – clean deal jacket output */
+@media print {
+  nav,
+  button {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}
